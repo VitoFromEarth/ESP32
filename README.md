@@ -2,10 +2,10 @@
 
 This repository contains both **C++ (PlatformIO / Arduino)** and **Rust (`no_std` / `esp-hal`)** implementations of the same firmware for the **ESP32 Dev Module**:
 
-- **Serial Output:** Prints `"Hello World"` at `115200` baud.
-- **Internal LED:** Blinks onboard LED on **GPIO 2** every 100 ms.
-- **External LED:** Blinks external LED on **GPIO 4** every 100 ms.
-- **Simulation:** Full Wokwi simulator setup included for both versions.
+- **Serial Output:** Prints Morse characters (`.` and `-`) and SOS signal status at `115200` baud.
+- **Internal LED:** Blinks onboard LED on **GPIO 2** according to Morse timing (Dot = 200 ms, Dash = 600 ms).
+- **External LED:** Blinks external LED on **GPIO 4** (Blue LED) in sync with internal LED.
+- **Simulation:** Full Wokwi simulator setup included for both C++ and Rust.
 
 ---
 
