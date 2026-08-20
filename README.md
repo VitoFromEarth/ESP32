@@ -11,10 +11,15 @@ Each lesson is self-contained in the `lessons/` directory, containing dedicated 
 ```
 ESP32/
 ├── lessons/
-│   └── lesson_01_sos/           # Lesson 1: SOS Morse Code & Dual LED
-│       ├── README.md            # Lesson details and explanation
-│       ├── cpp/                 # PlatformIO C++ implementation
-│       └── rust/                # esp-hal Rust implementation
+│   ├── lesson_01_sos/           # Lesson 1: SOS Morse Code & Dual LED
+│   │   ├── README.md            # Lesson details and explanation
+│   │   ├── cpp/                 # PlatformIO C++ implementation
+│   │   └── rust/                # esp-hal Rust implementation
+│   │
+│   └── lesson_02_memory_structs/# Lesson 2: Embedded Memory, Structs & Data Types
+│       ├── README.md            # Lesson details and checklist
+│       ├── MEMORY_AND_TYPES.md  # Overflow & Memory Layout Guide
+│       └── cpp/                 # PlatformIO C++ implementation
 │
 └── README.md                    # Curriculum Overview & Quick Start
 ```
@@ -24,6 +29,7 @@ ESP32/
 | # | Lesson Name | Description | C++ Setup | Rust Setup |
 |---|---|---|---|---|
 | 01 | [Lesson 01: SOS Morse Code](lessons/lesson_01_sos/README.md) | Blinks onboard & external LEDs to send SOS in Morse code via GPIO2/GPIO4 with serial output | [`cpp/`](lessons/lesson_01_sos/cpp) | [`rust/`](lessons/lesson_01_sos/rust) |
+| 02 | [Lesson 02: Memory & Structs](lessons/lesson_02_memory_structs/README.md) | Sensor structs, non-blocking timers, ESP32 free heap monitoring & integer overflow analysis | [`cpp/`](lessons/lesson_02_memory_structs/cpp) | [`rust/`](lessons/lesson_02_memory_structs/rust) |
 
 ---
 
