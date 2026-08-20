@@ -1,0 +1,3 @@
+cargo:rustc-link-search=C:\Users\vitof\Documents\PlatformIO\Projects\ESP32\lessons\lesson_01_sos\rust\target\xtensa-esp32-none-elf\debug\build\esp32-d1315cbdd7316933\out
+cargo:rerun-if-changed=device.x
+cargo:rerun-if-changed=build.rs
